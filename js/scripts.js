@@ -13,4 +13,4 @@ $(document).ready(function () {
     spaceBetween: 30,
     speed: 400,
   });
-});
+})
