@@ -12,5 +12,23 @@ $(document).ready(function () {
     slidesPerView: 4,
     spaceBetween: 30,
     speed: 400,
+    
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+
+      1180: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }
   });
+  
 })
