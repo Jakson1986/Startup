@@ -129,8 +129,8 @@ body {
 }
 
 .button:hover {
-  color: #fff;
-  background-color: ;
+  color: #000;
+  background-color: #f00;
 }
 /*services 
 =======================*/
@@ -156,7 +156,7 @@ body {
 .banner_services {
   display: flex;
   width: 100%;
-  margin-bottom: 180px;
+  margin-bottom: 182px;
 }
 
 .col_services {
@@ -185,11 +185,14 @@ body {
 
 /*About us
 =======================*/
+#About p {
+  margin-bottom: 63px;
+}
 .about_text {
   display: flex;
   width: 100%;
   line-height: 1.7;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
 }
 
 .col_about {
@@ -207,17 +210,104 @@ body {
 
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 
-.swiper_slide img {
-  margin-bottom: 9px;
+.about_img_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 15px;
 }
 
-.swiper_slide p {
+.about_img_wrapper:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.3s;
+  background: rgba(85, 85, 85, 0.5);
+  z-index: -1;
+}
+
+.about_img_wrapper img {
+  display: block;
+}
+
+.about_img_wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.about_img_wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  transition: 0.3s;
+}
+
+.about_img_wrapper a:hover {
+  background: #c0301c;
+}
+
+.name {
   text-transform: uppercase;
   font: 400 14px/1.7 "Montserrat", arial, Tahoma, sans-serif;
+  margin-bottom: 2px;
+  padding-left: 13px;
 }
+
+.position_partner {
+  font: 400 13px/1.7 "Roboto Slab", "Times New Roman", Times, serif;
+  padding-left: 10px;
+}
+
+.swiper-slide:hover .about_img_wrapper:before {
+  opacity: 1;
+  z-index: 5;
+}
+
+.swiper-slide:hover .about_img_wrapper ul {
+  bottom: 30px;
+}
+
+#About {
+  margin-bottom: 191px;
+}
+
+#swiper-button-prev, #swiper-button-next {
+    color: #fff;
+    --swiper-navigation-size: 17px;
+    top: 37%;
+    background: #8f8f8f;
+    width: 35px;
+    height: 38px;
+}
+
+#swiper-button-prev {
+  left: 0;
+}
+
+#swiper-button-next {
+  left: 97%;
+}
+
+#swiper-button-prev:hover, #swiper-button-next:hover {
+  background: #c0301c;
+}
+
+
 
 /*Media
 ========================*/
@@ -235,7 +325,7 @@ body {
     top: 70%;
     width: 33%;
     padding: 20px 15px;
-    text-align: center;
+    text-align: left;
     z-index: 10;
     background: rgba(82, 2, 2, 0.7);
   }
@@ -243,6 +333,11 @@ body {
   .navigation a {
     display: block;
     padding: 10px 15px;
+  }
+
+  .navigation a:last-child {
+    padding: 0;
+    padding-left: 0;
   }
 
   .header {
@@ -269,3 +364,7 @@ body {
     text-align: center;
   }
 }
+ 640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
