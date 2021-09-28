@@ -12,14 +12,22 @@ $(document).ready(function () {
     slidesPerView: 4,
     spaceBetween: 30,
     speed: 400,
-    
+
+   
+      
     breakpoints: {
-      320: {
+       320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+
+      580: {
         slidesPerView: 2,
         spaceBetween: 20
       },
 
-      480: {
+      920: {
         slidesPerView: 3,
         spaceBetween: 10
       },
