@@ -156,7 +156,7 @@ body {
 .banner_services {
   display: flex;
   width: 100%;
-  margin-bottom: 182px;
+  margin-bottom: 82px;
 }
 
 .col_services {
@@ -185,6 +185,11 @@ body {
 
 /*About us
 =======================*/
+#About {
+  padding-top: 100px;
+  background: #f8f8f8;
+}
+
 #About p {
   margin-bottom: 63px;
 }
@@ -283,7 +288,8 @@ body {
 }
 
 #About {
-  margin-bottom: 191px;
+  margin-bottom: 91px;
+  padding-bottom: 100px;
 }
 
 #swiper-button-prev,
@@ -355,6 +361,7 @@ body {
 
   .header {
     position: relative;
+    margin-bottom: 150px;
   }
 
   .banner_text h1 {
@@ -365,11 +372,13 @@ body {
   .button {
     padding: 5px 10px;
     font-size: 10px;
+    margin-bottom: 130px;
   }
 
   .banner_services {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   .col_services {
@@ -382,15 +391,22 @@ body {
   }
 
   .col_services p {
-    padding: 15px 80px 30px;
-  }
-
-  .banner_services {
-    margin-bottom: 60px;
+    padding: 15px 30px 30px;
   }
 }
 
 @media (max-width: 480px) {
+  .header {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .button {
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-bottom: 90px;
+  }
+
   .about_text {
     display: flex;
     flex-direction: column;
