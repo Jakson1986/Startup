@@ -9,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "montserratbold";
   src: url("../fonts/montserrat-bold-webfont.woff2 montserrat-bold-webfont.woff2")
@@ -141,7 +140,7 @@ body {
   margin-bottom: 26px;
 }
 
-.row {
+.line {
   border-bottom: 3px solid #000;
   max-width: 50px;
   margin: auto;
@@ -318,7 +317,7 @@ body {
   padding-top: 45px;
 }
 
-.works_img {
+.row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
@@ -343,6 +342,7 @@ body {
   position: absolute;
   display: flex;
   padding: 15px;
+  justify-content: center;
   flex-direction: column;
   color: #fff;
   width: 100%;
