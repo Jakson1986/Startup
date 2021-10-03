@@ -28,6 +28,7 @@
 
 a {
   text-decoration: none;
+  transition: 0.3s;
 }
 .wrapper {
   overflow: hidden;
@@ -468,6 +469,94 @@ body {
   padding: 87px 0 0 0;
 }
 
+.post {
+  padding-top: 1px;
+  display: flex;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.post + .post {
+  padding-top: 38px;
+}
+.post_img img {
+  width: 100%;
+  height: auto;
+}
+.post_img {
+  flex-basis: 460px;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.post_header {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.post_date {
+  border: 2px solid #555;
+  color: #777;
+  height: 76px;
+  width: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  margin-right: 25px;
+  flex-basis: 76px;
+  flex-shrink: 0;
+  font: 700 24px/1.2 "Montserrat", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.post_month {
+  font-size: 14px;
+}
+
+.post_title h5 {
+  padding: 13px 0 11px 3px;
+  letter-spacing: 1px;
+  font: 700 14px "Montserrat", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.post a {
+  color: #777;
+}
+
+.post_title h5 a:hover,
+div a:hover {
+  color: #c0301c;
+}
+
+.post_title div {
+  font: 400 italic 13px/1.85 "Roboto Slab", "Times New Roman", Times, serif;
+  text-align: left;
+  color: #777;
+}
+
+.post_content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.post_content p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.post_link {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+
 /*Media
 ========================*/
 
@@ -507,6 +596,31 @@ body {
   }
   #swiper-button-next {
     left: 94%;
+  }
+}
+
+@media (max-width: 940px) {
+  .post_img {
+    flex-basis: 340px;
+    margin-right: 20px;
+  }
+
+  .post_date {
+    flex-basis: 65px;
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-right: 20px;
+  }
+  .post_month {
+    font-size: 14px;
+  }
+  .post_header {
+    margin-bottom: 15px;
+  }
+  .post_content p {
+    margin-bottom: 15px;
   }
 }
 
@@ -612,6 +726,22 @@ body {
   .col_33 {
     width: 50%;
   }
+
+  .post {
+    flex-direction: column;
+  }
+  .post_img {
+    margin: 0 0 15px;
+    flex-basis: auto;
+  }
+  .post_header {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .post_content p {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 480px) {
@@ -715,4 +845,7 @@ body {
   .get_in_touch_link {
     min-height: 250px;
   }
-}
+  .post_title,.post_title div {
+    line-height: 1.25;
+  }
+  
