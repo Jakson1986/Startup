@@ -128,7 +128,7 @@ body {
 
 .button:hover {
   color: #000;
-  background-color: #f00;
+  background-color: #c0301c;
 }
 /*services 
 =======================*/
@@ -140,10 +140,10 @@ body {
 }
 
 .line {
-  border-bottom: 3px solid #000;
+  border-bottom: 2px solid #555;
   max-width: 50px;
   margin: auto;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .header_sections p {
@@ -427,15 +427,10 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
-  z-index: -1;
+  opacity: 1;
+  z-index: 1;
   background: rgba(192, 48, 28, 0.7);
   transition: 0.3s;
-}
-
-.get_in_touch_link:hover .get_in_touch_hover {
-  opacity: 1;
-  z-index: 2;
 }
 
 .get_in_touch_hover p {
@@ -457,6 +452,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
+.get_in_touch_hover a:hover {
+  background: #c0301c;
+  color: #000;
+}
+
 .get_in_touch_hover span {
   text-transform: uppercase;
 }
@@ -513,6 +514,10 @@ body {
   .mobile_menu {
     display: inline-block;
     margin-right: 13%;
+  }
+
+  .main_banner {
+    margin-bottom: 50px;
   }
 
   .navigation {
@@ -585,8 +590,13 @@ body {
   }
 
   #About {
+    padding-top: 30px;
     padding-bottom: 50px;
-}
+  }
+
+  #About p {
+    margin-bottom: 40px;
+  }
   .tabs-item .col_inner img {
     width: 100%;
   }
@@ -598,8 +608,11 @@ body {
   .get_in_touch_hover p {
     font-size: 24px;
   }
-} 
 
+  .col_33 {
+    width: 50%;
+  }
+}
 
 @media (max-width: 480px) {
   .header {
@@ -616,6 +629,7 @@ body {
   .about_text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   .col_about.left,
@@ -623,22 +637,36 @@ body {
     width: 100%;
     text-align: center;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
   #About {
     padding-bottom: 20px;
-}
+  }
 
-    .tabs-item .col_inner img {
-    width: 100%;
+  #Works {
+    padding: 50px 0;
+  }
+
+  .tabs-item .col_inner img {
+    width: 80%;
   }
 
   .col_33 {
-    width: 50%;
+    width: 100%;
   }
-}
 
+  .get_in_touch_link {
+    min-height: 240px;
+  }
+
+  .get_in_touch_hover p {
+    font-size: 20px;
+  }
+
+  .get_in_touch_hover a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 430px) {
