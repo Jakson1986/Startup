@@ -479,6 +479,11 @@ body {
 .post + .post {
   padding-top: 38px;
 }
+
+.post:last-child {
+  border-bottom: none;
+  margin-bottom: 100px;
+}
 .post_img img {
   width: 100%;
   height: auto;
@@ -556,6 +561,48 @@ div a:hover {
   font-size: 13px;
   letter-spacing: 1.2px;
 }
+
+/*clients 
+================*/
+
+#Clients {
+  background: #f8f8f8;
+  padding-bottom: 123px;
+
+}
+.brend {
+  padding: 61px 56px 54px;
+}
+
+.brend ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.swiper-slide p{
+  font:400 18px/1.667 "Roboto Slab", "Times New Roman", Times, serif;  
+  color: #555;  
+  padding: 0 145px 27px;
+}
+
+.swiper-slide p+p {
+  font-size: 20px;
+}
+
+
+/*contact
+===================*/
+
+
+#Contact {
+  padding-top: 93px;
+}
+
+
+
+
 
 /*Media
 ========================*/
