@@ -58,12 +58,12 @@ $(document).ready(function () {
       scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
   });
-/*
-  const swiper = new Swiper('.slider_brend', {
+
+  const swiper3 = new Swiper('.slider_brend', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
   },
-})*/
+})
   
 })
