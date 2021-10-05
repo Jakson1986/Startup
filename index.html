@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
         rel="stylesheet">-->
-    
+    <link href="css/fontAwesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>Startup</title>
@@ -628,13 +628,12 @@
                         <p>Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
                         officiis debitis aut rerum”</p>
                         <P>John Doe, Google Inc.</P>
-
                     </div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
                 </div>
                
-                <div class="swiper-pagination"></div>
+                <div id="pagination" class="swiper-pagination"></div>
             </div> 
         </div>      
     </section>
@@ -645,6 +644,63 @@
                 <h2>Get in touch</h2>
                 <div class="line"></div>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+            </div>
+        
+            <div class="contacts">
+                <div class="contacts_text">
+                    <address class="contacts_item ">
+                        <h6>Address</h6>
+                        <P>312, 7th Ave, New York NY <br> 101200, United States of America</P>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </address>
+                    <address class="contacts_item ">
+                        <h6>Hotline (24x7)</h6>
+                        <a href="tel:+650052300,">+65 0052 300,</a>
+                        <a href="tel:+6588251210">+65 88251 210</a><br>
+                        <a href="tel:+8801723511340">+88 01723 511 340</a>
+                        <i class="fas fa-mobile-alt"></i>
+                    </address>
+                    <address class="contacts_item ">
+                        <h6>E-mail</h6>
+                        <a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a><br>
+                        <a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a>
+                        <i class="far fa-envelope"></i>
+                    </address>
+                </div>
+                <div class="contacts_form">
+                    <form action="">
+                        <div class="form_row">
+                            <div class="form_col">
+                                <input type="text" placeholder="YOUR NAME">
+                            </div>
+
+                            <div class="form_col">                                
+                                <input type="email" placeholder="YOUR E-MAIL">
+                            </div>
+                            
+                        </div>
+                        <div class="form_row">
+                            <div class="form_col">
+                                <input type="text" placeholder="YOUR SUBJECT">
+                            </div>
+                        
+                            <div class="form_col">
+                                <input type="email" placeholder="COMPANY NAME" name="company">
+                            </div>
+                            
+                        </div>
+
+                        <textarea name="massege" placeholder="WRITE YOUR MASSEGE"></textarea>
+
+                        <div class="form_row">
+                            <input class="form_button" type="submit" value="SEND MASSEGE" name="submit" >                  
+                        </div>
+
+
+                    </form>
+
+                </div>
+
             </div>
         </div>
     </section>
