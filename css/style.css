@@ -269,7 +269,7 @@ body {
 
 .header_sections p {
   font: 400 16px/1.5 "Roboto Slab", "Times New Roman", Times, serif;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
 }
 
 .banner_services {
@@ -326,6 +326,7 @@ body {
 
 .col_about {
   width: 50%;
+  line-height: 1.75;
   text-align: left;
 }
 
